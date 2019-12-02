@@ -10,9 +10,8 @@ import ipaddress
 
 showClasses = ['fvBD', 'fvRsCtx', 'fvSubnet', 'fvRsBDToOut', 'fvCtx', 'fvRsCtxToBgpCtxAfPol', 'bgpRtTarget', 'bgpRtTargetP', 'fvRtCtx', 'fabricNode', 'infraAttEntityP', 'fvAEPg', 'infraAccBndlGrp', 'infraAccPortGrp']
 showValues = ['name', 'nameAlias', 'description', 'ipLearning', 'arpFlood', 'unkMcastAct', 'unkMacUcastAct', 'multiDstPktAct', 'configIssues', \
-        'tnFvCtxName', 'ip', 'scope', 'tnL3extOutName', 'rt', 'type', 'targetAf', 'tnBgpCtxAfPolName', 'tDn' \
+        'tnFvCtxName', 'ip', 'scope', 'tnL3extOutName', 'rt', 'type', 'targetAf', 'tnBgpCtxAfPolName', 'tDn']
 
-instr = '  '
 def ipCalc(subnet, mask=None):
     in_net = None
     if mask is None:
