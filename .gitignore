@@ -1,0 +1,10 @@
+*.xml
+*.csv
+*.mm
+*.cfg
+*.txt
+*.pyc
+*.json
+*.yaml
+*.db
+*__pycache__/

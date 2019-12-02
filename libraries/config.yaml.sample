@@ -1,0 +1,23 @@
+version: 1
+aci:
+  fabric1_alias:
+    apic: apic1.domain.se
+    username: user1
+    password: pw1
+  fabirc2_alias:
+    apic: apic1.domain.se
+    username: user1
+    password: pw1
+
+db:
+  # Choose database driver (sqlite3 or mysql)
+  driver: sqlite3
+  #driver: mysql
+
+  db_name: aci
+  db_table: faults
+
+  # For mysql:
+  host: localhost
+  user: test
+  password: test_password
