@@ -2,9 +2,7 @@ import sys
 import yaml
 import sqlalchemy as db
 from sqlalchemy import Table, Column, Integer, String, Float, MetaData
-from sqlalchemy.orm import sessionmaker
 from sqlalchemy.sql import and_, or_, not_, select
-from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy_utils import create_database, database_exists
 
 from os.path import expanduser, dirname, realpath, isfile
