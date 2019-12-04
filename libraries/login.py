@@ -90,7 +90,7 @@ class Session():
 
             username = cfg['aci'][self.env].get('username')
             if not username:
-                username = input('Username: ')
+                username = raw_input('Username: ')
             password = cfg['aci'][self.env].get('password')
             if not password:
                 password = getpass()
