@@ -44,7 +44,7 @@ Update aci-search.py script with your ACI fabric environment names in following 
 If you want make script globaly available, you need to set up bash and python paths.
 
 In Linux, set up a Python path to find the libraries included in the project, for example:
-* "export PYTHONPATH=/home/user/github/"
+* "export PYTHONPATH=/home/user/github/aci-search"
 
 Create a symbolic link, so the script can be launched from anywhere in the terminal
 * ln -s /home/user/github/aci-search/cli/aci-search.py  /usr/local/bin/aci-search
