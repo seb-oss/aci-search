@@ -91,7 +91,7 @@ class LocalSqlSession():
         return dict_results
 
     def deleteFault(self, fault_hash):
-        self.conn.execute(self.table.delete().where(self.tablec.hash==fault_hash))
+        self.conn.execute(self.table.delete().where(self.table.c.hash==fault_hash))
 
     def insert(self, values):
         self.conn.execute(self.table.insert(), values)
