@@ -1,7 +1,7 @@
 import sys
 import yaml
 import sqlalchemy as db
-from sqlalchemy import Table, Column, Integer, String, Float, MetaData
+from sqlalchemy import Table, Column, Integer, String, Float, MetaData, UniqueConstraint
 from sqlalchemy.sql import and_, or_, not_, select
 from sqlalchemy_utils import create_database, database_exists
 
@@ -65,7 +65,9 @@ class LocalSqlSession():
                     Column('interface', String(50), primary_key=True, nullable=False),
                     Column('neighbor', String(50)),
                     Column('nbInterface', String(50), quote=False),
-                    Column('timeStamp', String(17), quote=False))
+                    Column('timeStamp', String(17), quote=False),
+                    UniqueConstraint('nodeName', 'interface', sqlite_on_conflict='REPLACE')
+                    )
 
         self.checkIfExists(db_table_name)
 
